@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyContacts.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="20"
+            VerticalOptions="Center">
+            <Label
+                FontSize="24"
+                HorizontalOptions="Center"
+                Text="O que deseja fazer?"
+                x:Name="TargetLabel" />
+
+            <Button
+                Clicked="OnAddNewContactButtonClicked"
+                HeightRequest="100"
+                Text="Adicionar novo contato"
+                VerticalOptions="Center" />
+            <Button
+                Clicked="OnShowContactsButtonClicked"
+                HeightRequest="100"
+                Text="Ver contatos"
+                VerticalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
